@@ -1571,14 +1571,14 @@ void accord_soc_percentage_stop_charger(struct charger_manager *info)
 {
 	if(cmd_soc_enable == 1)
 	{
-		if(cmd_soc == g_cw2015_capacity)
-		{
-			info->cmd_discharging = true;
+		//if(cmd_soc == g_cw2015_capacity)
+		//{
+		//	info->cmd_discharging = true;
 
-			charger_dev_enable(info->chg1_dev, false);
-			charger_dev_enable(info->chg2_dev, false);
-			charger_manager_notifier(info, CHARGER_NOTIFY_STOP_CHARGING);
-		}
+		//	charger_dev_enable(info->chg1_dev, false);
+		//	charger_dev_enable(info->chg2_dev, false);
+		//	charger_manager_notifier(info, CHARGER_NOTIFY_STOP_CHARGING);
+		//}
 			
 	}
 	else if(cmd_soc_enable == 2)

@@ -2045,6 +2045,9 @@
 		phandle = <0x76>;
 	};
 
+	g_sensor: g_sensor {
+		compatible = "mediatek,g_sensor";
+	};
 	mse {
 		compatible = "mediatek,fix_build_error";
 		linux,phandle = <0x77>;
@@ -3949,6 +3952,12 @@
 		compatible = "mediatek,usb_iddig_bi_eint";
 		linux,phandle = <0x8b>;
 		phandle = <0x8b>;
+	};
+
+	mt6370_pmu_eint: mt6370_pmu_eint {
+	};
+
+	mt6370_pd: mt6370_pd_eint {
 	};
 
 	rt9465_slave_chr {

@@ -429,7 +429,7 @@ static ssize_t gt1x_tool_read(struct file *filp, char __user * buffer, size_t co
 	} else if (2 == cmd_head.wr) {
 		ret = copy_to_user(buffer, IC_TYPE, sizeof(IC_TYPE));
 		*ppos += sizeof(IC_TYPE);
-		GTP_DEBUG("Return ic type:%s len:%d.", IC_TYPE, sizeof(IC_TYPE));
+		//GTP_DEBUG("Return ic type:%s len:%d.", IC_TYPE, sizeof(IC_TYPE));
 		return ret;
 	} else if (4 == cmd_head.wr) 
 	{
